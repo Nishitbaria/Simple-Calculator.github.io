@@ -1,6 +1,22 @@
 body{
-    background-color: tan;
-}
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab); */
+    background-image: url("Math-640x315_September_2018.jpg" )   ;
+    background-repeat: no-repeat;
+    animation: 12s ease-in-out infinite;
+ }
+ @keyframes color {
+     0%{
+ background-position : 0 50% ;
+     }
+     50%{
+         background-position : 100% 50% ;
+             }
+             100%{
+                 background-position : 0 50% ;
+                     }
+    }
 .box{
     background-color: aliceblue;
     height: 300px;
@@ -51,15 +67,20 @@ body{
     color: #fff;
 }
 .title{
-    margin-bottom: 10px;
-    margin-top: 30px;
-    padding: 5px 0;
-    font-size: 40px;
-    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+position: sticky;
     text-align: center;
-    color: black;
-    font-family: 'Cookie',cursive;
+   color: white;
+   margin: 2px;
+   border: 10px solid transparent;
+   padding: 15px;
+   border-image: url(border.png) 30 round;
+  
+
 }
+.title:hover {
+    color: white;
+    text-shadow: 2px 2px 4px #000000; }
 .button.pink{
     color: black;
     background-color: bisque;
@@ -91,4 +112,7 @@ body{
 }
 p{
     line-height: 10px;
+}
+.foot{
+    background-color: #23d5ab;
 }
